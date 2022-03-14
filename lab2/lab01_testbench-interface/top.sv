@@ -11,15 +11,15 @@ module top;
   // clock variables
   logic clk;
   logic test_clk;
-  tb_ifc laborator3();
+  tb_ifc laborator3(clk);
 
   // interconnecting signals
-  logic          load_en;
-  logic          reset_n;
-  opcode_t       opcode;
-  operand_t      operand_a, operand_b;
-  address_t      write_pointer, read_pointer;
-  instruction_t  instruction_word;
+  //logic          load_en;
+  // logic          reset_n;
+  // opcode_t       opcode;
+  // operand_t      operand_a, operand_b;
+  // address_t      write_pointer, read_pointer;
+  // instruction_t  instruction_word;
 
   // instantiate testbench and connect ports
   instr_register_test test (
@@ -36,7 +36,7 @@ module top;
 
   // instantiate design and connect ports
   instr_register dut (
-    .clk(laborator3.clk),
+    .clk(clk),
     .load_en(laborator3.load_en),
     .reset_n(laborator3.reset_n),
     .operand_a(laborator3.operand_a),
