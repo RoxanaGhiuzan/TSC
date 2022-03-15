@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2
+T_opt
+Vj1In8>JnLB5fRCzT89m9I1
+04 3 4 work top fast 0
+Z1 =1-02004c4f4f50-6230c2dc-9c-47a4
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 n@_opt
+Z4 OE;O;6.6d;45
+Z5 dC:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2
+vinstr_register
+Z6 Mx1 6 sv_std 3 std
+Z7 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z8 Mx2 4 work 18 instr_register_pkg
+Z9 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z10 Izlgh4QQ_5WV`>EDVk6A=21
+Z11 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+R5
+Z12 w1647287694
+Z13 8C:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab_dut/instr_register.sv
+Z14 FC:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab_dut/instr_register.sv
+L0 9
+Z15 OE;L;6.6d;45
+r1
+31
+Z16 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z17 !s100 6^c4H@z>TICN;NJ=0DO5K2
+Z18 !s105 instr_register_sv_unit
+!s85 0
+Xinstr_register_pkg
+R6
+R7
+Z19 I:JTF@fFZEAY;_aRJ`=BP83
+Z20 V:JTF@fFZEAY;_aRJ`=BP83
+S1
+R5
+R12
+Z21 8C:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab_dut/instr_register_pkg.sv
+Z22 FC:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R15
+r1
+31
+R16
+Z23 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R6
+R7
+R8
+R9
+Z24 I9oI7g=OUfS6dlCK^BinR80
+Z25 VEBCnBoI9@;K2I3Z?DhHY42
+S1
+R5
+Z26 w1647362240
+Z27 8C:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z28 FC:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R15
+r1
+31
+R16
+Z29 !s100 jWhX>`JQaG:14L6[TUodS3
+Z30 !s105 instr_register_test_sv_unit
+!s85 0
+Ytb_ifc
+R6
+R7
+R8
+R9
+Z31 I]1]8[i1k51WPG@[3h4;b^2
+Z32 V[2MM;6bj4cE27ld353ZQ90
+S1
+R5
+R12
+Z33 8C:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z34 FC:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R15
+r1
+31
+R16
+Z35 !s100 UjAY]fGMH`SA<^EASh0P@2
+Z36 !s105 tb_ifc_sv_unit
+!s85 0
+vtop
+R6
+R7
+R8
+R9
+Z37 I5kmXO`[`bPb1FkhZEQMU32
+Z38 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R5
+Z39 w1647362658
+Z40 8C:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab01_testbench-interface/top.sv
+Z41 FC:/Users/otili/Desktop/FACULTATE/AN4/sem2/TSC/laboratoare/TSC/lab2/lab01_testbench-interface/top.sv
+L0 5
+R15
+r1
+31
+R16
+Z42 !s105 top_sv_unit
+Z43 !s100 jd[6ga=6oK[22o7mee2Di2
+!s85 0
