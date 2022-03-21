@@ -16,7 +16,7 @@ if {[file isdirectory work]} {
 # In [GUI_mode]: always compile sources / [regress_mode]: compile sources only once
 if {$compile_on || [batch_mode] == 0} {
   vlib work
-  vlog -sv -timescale "1ps/1ps" -work work       -f sources.txt
+  vlog -sv -timescale "1ns/1ns" -work work       -f sources.txt
 }
 
 # Load project
