@@ -43,3 +43,6 @@ end
 `endif
 
 endmodule: instr_register
+
+//adaugam in istructuin_word un semnal iar in dut in functie de ce tip de opcode avem sa facem operatia
+//in dut facem un switch in care avem tipu si res

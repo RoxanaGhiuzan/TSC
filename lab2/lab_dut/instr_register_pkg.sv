@@ -14,7 +14,7 @@ package instr_register_pkg;
     MULT,
     DIV,
     MOD
-  } opcode_t;
+  } opcode_t;//enumerare
 
   typedef logic signed [31:0] operand_t;
   
@@ -24,6 +24,6 @@ package instr_register_pkg;
     opcode_t  opc;
     operand_t op_a;
     operand_t op_b;
-  } instruction_t;
+  } instruction_t;//structura
 
 endpackage: instr_register_pkg
