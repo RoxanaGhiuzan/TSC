@@ -24,6 +24,7 @@ package instr_register_pkg;
     opcode_t  opc;
     operand_t op_a;
     operand_t op_b;
+    operand_t op_result;
   } instruction_t;//structura
 
 endpackage: instr_register_pkg

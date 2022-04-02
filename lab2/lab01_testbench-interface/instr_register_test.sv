@@ -88,7 +88,7 @@ module instr_register_test
     $display("  opcode = %0d (%s)", laborator3.cb.opcode, laborator3.cb.opcode.name);
     $display("  operand_a = %0d",   laborator3.cb.operand_a);
     $display("  operand_b = %0d\n", laborator3.cb.operand_b);
-    $display(" Time:  time = %d ns \n", $time);
+    $display("  time = %d ns \n", $time);
   endfunction: print_transaction
 
   function void print_results;
@@ -96,7 +96,8 @@ module instr_register_test
     $display("  opcode = %0d (%s)", laborator3.cb.instruction_word.opc, laborator3.cb.instruction_word.opc.name);
     $display("  operand_a = %0d",   laborator3.cb.instruction_word.op_a);
     $display("  operand_b = %0d\n", laborator3.cb.instruction_word.op_b);
-    $display(" Time:  time = %d ns\n", $time);
+    $display("  time   = %d ns\n", $time);//print time
+    $display("  result    = %0d\n", laborator3.cb.instruction_word.op_result);//print result
   endfunction: print_results
 
 endmodule: instr_register_test
