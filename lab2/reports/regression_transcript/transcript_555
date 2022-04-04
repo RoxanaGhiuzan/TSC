@@ -1,0 +1,103 @@
+# 555 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# -- Compiling interface tb_ifc
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 555 -novopt top 
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.instr_register_pkg
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.top
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.tb_ifc
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.instr_register_test
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(98): Clocking block output laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(99): Clocking block output laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(100): Clocking block output laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(97): Clocking block output laborator3.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(105): Clocking block output laborator3.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Error: (vish-4014) No objects found matching '/top/test/seed'.
+# Executing ONERROR command at macro ./wave.do line 14
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# First header
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 2
+# 
+#   time =                   24 ns 
+# 
+# Writing to register location 1: 
+#   opcode = 1 (PASSA)
+#   operand_a = 15
+#   operand_b = 14
+# 
+#   time =                   34 ns 
+# 
+# Writing to register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 12
+# 
+#   time =                   44 ns 
+# 
+# 
+# Reading back the same register locations written...
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 12
+# 
+#   time   =                   56 ns
+# 
+#   result    = 72
+# 
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 12
+# 
+#   time   =                   66 ns
+# 
+#   result    = 72
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(73)
+#    Time: 74 ns  Iteration: 2  Instance: /top/test
+# 1
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 73
+# Simulation Breakpoint: 1
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 73
+# MACRO ./run.do PAUSED at line 49
