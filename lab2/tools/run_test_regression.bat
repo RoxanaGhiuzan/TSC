@@ -1,9 +1,11 @@
 ::========================================================================================
-::call clean.bat
+call clean.bat
 ::========================================================================================
-::call build.bat
+call build.bat
 ::========================================================================================
-::cd ../sim
-:: vsim -gui -do run.do
-::vsim -gui -do "do run.do %1"
-vsim -c -do "do run.do %1" 
+cd ../sim
+
+call run_test.bat 1234
+call run_test.bat 5678
+call run_test.bat 12345 
+call run_test.bat 6789  

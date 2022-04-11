@@ -1,0 +1,78 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\tools
+vinstr_register
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Mx2 4 work 18 instr_register_pkg
+DXx4 work 18 instr_register_pkg 0 22 dzSClQXYPGM4YNSJkTCnO3
+!s100 [oeQ6a48>M05BM`>`_mK31
+Ig9oDT@2<3?Y<A0i`MHo=?1
+V3z9A3Eb_VM7O2iR_@`ig80
+!s105 instr_register_sv_unit
+S1
+Z3 dC:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\tools
+w1648907533
+8../../lab2/lab_dut/instr_register.sv
+F../../lab2/lab_dut/instr_register.sv
+L0 9
+Z4 OE;L;6.6d;45
+r1
+!s85 0
+31
+Z5 o-sv -work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z6 !s92 -sv -work work +incdir+../../lab_dut +incdir+../../lab_dut +incdir+../lab01_testbench-interface +incdir+../lab01_testbench-interface +incdir+../lab01_testbench-interface -L mtiAvm -L mtiOvm -L mtiUPF
+Xinstr_register_pkg
+R1
+R2
+!s100 oFXYSC@efi1`8ZJ8Q>Xbj2
+IdzSClQXYPGM4YNSJkTCnO3
+VdzSClQXYPGM4YNSJkTCnO3
+S1
+R3
+w1649055738
+8../../lab2/lab_dut/instr_register_pkg.sv
+F../../lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6
+Ytb_ifc
+!s100 iYSLXj5eJhKF>KA1e]<@F2
+I5gC_d@8e_mjOc=`0f63Mj0
+V[2MM;6bj4cE27ld353ZQ90
+Z7 !s105 instr_register_test_sv_unit
+S1
+R3
+w1649058276
+8../lab01_testbench-interface/tb_ifc.sv
+F../lab01_testbench-interface/tb_ifc.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6
+vtop
+!s100 V`4N2DRdDgzz>IPfia@U01
+INM>9ehe^SL5KfVS_coH3z3
+Ve:gFW1CKLAXc^T:7k2HoD1
+R7
+S1
+R3
+w1647366258
+8../lab01_testbench-interface/top.sv
+F../lab01_testbench-interface/top.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6

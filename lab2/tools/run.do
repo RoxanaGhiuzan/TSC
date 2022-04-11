@@ -8,7 +8,7 @@ transcript file ../reports/regression_transcript/transcript_$1
 
 # Check if the sources must be re-compiled
 
-echo $1
+#echo $1
 
 if {[file isdirectory work]} {
   set compile_on 0
@@ -23,8 +23,8 @@ if {$compile_on || [batch_mode] == 0} {
 }
 
 # Load project
-  eval vsim -sv_seed $1 -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva top
-# eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva top
+#  eval vsim -sv_seed $1 -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva top
+ eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sv_seed $1 -sva top
 # eval vsim -novopt -quiet -coverage -notogglevlogints +notimingchecks +nowarnTSCALE +TESTNAME=$1 -sva top
 
 # Run log/wave commands

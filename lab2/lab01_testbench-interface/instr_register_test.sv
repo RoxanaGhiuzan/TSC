@@ -8,19 +8,37 @@
 //clasa mai are constructors
 //declaram o var in clasa pt interfata cu virtual:virtual virtual tb_ifc.test interface
 //declaram clasa class   endclass
+
 module instr_register_test
   import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
   (
     tb_ifc.TB laborator3
   );
-//functia are timpu de simulare 0 iar task ul are timp de simulare mediu
+//functia are timpu de simulare 0 iar task ul are timp de simulare mediu si nu returneaza o valoare
   //timeunit 1ns/1ns;
   class first_test;  
   virtual tb_ifc.TB laborator3;
+  parameter nr_of_operations = 50;
+
+  covergroup coverage;
+        coverpoint laborator3.cb.operand_a{
+            bins neg = {[-15:-1]}; //valorile pe care vrem sa le masuram;cu el cream un coverpoint
+            bins zero = {0};
+            bins pos = {[1:15]};
+        }
+        coverpoint laborator3.cb.operand_b{
+            bins zero = {0};
+            bins pos = {[1:15]};
+        }
+        coverpoint laborator3.cb.opcode{
+            bins opcode_values = {[0:7]};
+        }
+    endgroup
   //int seed = 555;//seed ul reprezinta val initiala cu care va incepe randomizarea
   function new(virtual tb_ifc.TB laborator3);
     this.laborator3=laborator3;
   endfunction
+
   task run();
   // initial begin
     $display("\n\n***********************************************************");
@@ -39,21 +57,25 @@ module instr_register_test
 
     $display("\nWriting values to register stack...");
     @(posedge laborator3.cb) laborator3.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (3) begin
+    //repeat (3) begin
+    repeat (nr_of_operations) begin
       @(posedge laborator3.cb) randomize_transaction;
       @(negedge laborator3.cb) print_transaction;
+      coverage.sample;
     end
     @(posedge laborator3.cb) laborator3.cb.load_en <= 1'b0;  // turn-off writing to register
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
     repeat (2) begin
-      for (int i=2; i >= 2; i--) begin
+      //for (int i=2; i >= 2; i--) begin
+      for (int i=0; i <= nr_of_operations; i++) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
       @(posedge laborator3.cb) laborator3.cb.read_pointer <= i;
       @(negedge laborator3.cb) print_results;
+      coverage.sample;
     end
     end  
     // for (int i=2; i >= 2; i--) begin
@@ -108,7 +130,8 @@ module instr_register_test
     $display("  operand_b = %0d\n", laborator3.cb.instruction_word.op_b);
     $display("  time   = %d ns\n", $time);//print time
     $display("  result    = %0d\n", laborator3.cb.instruction_word.op_result);//print result
-  endfunction: print_results
+  endfunction: print_results 
+
 endclass
   //int seed = 555;//seed ul reprezinta val initiala cu care va incepe randomizarea
   initial begin 
@@ -117,6 +140,8 @@ endclass
     //ft.laborator3 = laborator3;
     ft.run();
   end
+
+endmodule: instr_register_test
 //   task run();
 //   // initial begin
 //     $display("\n\n***********************************************************");
@@ -202,5 +227,3 @@ endclass
 //     $display("  time   = %d ns\n", $time);//print time
 //     $display("  result    = %0d\n", laborator3.cb.instruction_word.op_result);//print result
 //   endfunction: print_results
-
-endmodule: instr_register_test
