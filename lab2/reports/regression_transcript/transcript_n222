@@ -1,0 +1,51 @@
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# -- Compiling interface tb_ifc
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed n222 -novopt top 
+# ** Error: (vsim-7031) Invalid value for Sv_Seed (n222)
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.instr_register_pkg
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.top
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.tb_ifc
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.instr_register_test
+# Refreshing C:\Users\otili\Desktop\FACULTATE\AN4\sem2\TSC\laboratoare\TSC\lab2\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(33): Clocking block output #parent#.laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output #parent#.laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(29): Clocking block output #parent#.laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(33): Clocking block output #parent#.laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output #parent#.laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(29): Clocking block output #parent#.laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(125): Clocking block output laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(126): Clocking block output laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(127): Clocking block output laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output laborator3.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(132): Clocking block output laborator3.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /top/test

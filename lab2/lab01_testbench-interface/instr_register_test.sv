@@ -18,25 +18,30 @@ module instr_register_test
   //timeunit 1ns/1ns;
   class first_test;  
   virtual tb_ifc.TB laborator3;
-  parameter nr_of_operations = 50;
+  parameter nr_of_operations = 100;
 
-  covergroup coverage;
-        coverpoint laborator3.cb.operand_a{
-            bins neg = {[-15:-1]}; //valorile pe care vrem sa le masuram;cu el cream un coverpoint
+  covergroup my_coverage; 
+        OP_A_COVER:coverpoint laborator3.cb.operand_a{
+            bins neg[] = {[-15:-1]}; //valorile pe care vrem sa le masuram;cu el cream un coverpoint
             bins zero = {0};
-            bins pos = {[1:15]};
+            bins pos[] = {[1:15]};//punem [] pt a luat toate val din interval,doar la cele cu mai multe valori
         }
-        coverpoint laborator3.cb.operand_b{
+        OP_B_COVER:coverpoint laborator3.cb.operand_b{
             bins zero = {0};
-            bins pos = {[1:15]};
+            bins pos[] = {[1:15]};
         }
-        coverpoint laborator3.cb.opcode{
-            bins opcode_values = {[0:7]};
+        OP_COVER:coverpoint laborator3.cb.opcode{
+            bins opcode_values[] = {[0:7]};
+        }
+        OP_RESULT_COVER:coverpoint laborator3.cb.instruction_word.op_result{
+            bins result_neg[] = {[-30:-1]};//daca exista un nr neg din interval atunci result_neg e 100%
+            bins result_pos[] = {[1:30]};
         }
     endgroup
   //int seed = 555;//seed ul reprezinta val initiala cu care va incepe randomizarea
-  function new(virtual tb_ifc.TB laborator3);
+  function new(virtual tb_ifc.TB laborator3);  
     this.laborator3=laborator3;
+    my_coverage = new();
   endfunction
 
   task run();
@@ -61,7 +66,7 @@ module instr_register_test
     repeat (nr_of_operations) begin
       @(posedge laborator3.cb) randomize_transaction;
       @(negedge laborator3.cb) print_transaction;
-      coverage.sample;
+      my_coverage.sample;
     end
     @(posedge laborator3.cb) laborator3.cb.load_en <= 1'b0;  // turn-off writing to register
 
@@ -75,7 +80,7 @@ module instr_register_test
       // the expected values to be read back
       @(posedge laborator3.cb) laborator3.cb.read_pointer <= i;
       @(negedge laborator3.cb) print_results;
-      coverage.sample;
+      my_coverage.sample;
     end
     end  
     // for (int i=2; i >= 2; i--) begin
@@ -105,7 +110,7 @@ module instr_register_test
     // write_pointer values in a later lab
     //
     static int temp = 0;
-    laborator3.cb.operand_a     <= $urandom%16;                 // between -15 and 15,ia val random,ata poz cat si neg
+    laborator3.cb.operand_a     <= $signed($urandom)%16;                 // between -15 and 15,ia val random,ata poz cat si neg
     laborator3.cb.operand_b     <= $unsigned($urandom)%16;            // between 0 and 15,val random pe 32 biti numa poz
     laborator3.cb.opcode        <= opcode_t'($unsigned($urandom)%8);
     // laborator3.cb.operand_a     <= $random(seed)%16;                 // between -15 and 15,ia val random,ata poz cat si neg
