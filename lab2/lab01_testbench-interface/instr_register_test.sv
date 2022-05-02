@@ -13,12 +13,12 @@ module instr_register_test
   import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
   (
     tb_ifc.TB laborator3
-  );
+  );//aici am important interfata creeand o instanta pt ea
 //functia are timpu de simulare 0 iar task ul are timp de simulare mediu si nu returneaza o valoare
   //timeunit 1ns/1ns;
   class first_test;  
   virtual tb_ifc.TB laborator3;
-  parameter nr_of_operations = 100;
+  parameter nr_of_operations = 5;
 
   covergroup my_coverage; 
         OP_A_COVER:coverpoint laborator3.cb.operand_a{

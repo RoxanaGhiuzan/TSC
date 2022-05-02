@@ -28,10 +28,10 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
       foreach (iw_reg[i])
         iw_reg[i] = '{opc:ZERO,default:0};  // reset to all zeros
     end
-    else if (load_en) begin
+    else if (load_en) begin//in load_en daca e 1 se incarca val
       //iw_reg[write_pointer] = '{opcode,operand_a,operand_b};
       case (opcode)
-      PASSA : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, operand_a};
+      PASSA : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, operand_a};//write_ponter e pozitia pe care ne aflam
       PASSB : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, operand_b};
       ADD   : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a + operand_b)};
       SUB   : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a - operand_b)};
@@ -43,7 +43,7 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
     end
 
   // read from the register
-  assign instruction_word = iw_reg[read_pointer];  // continuously read from register
+  assign instruction_word = iw_reg[read_pointer];  // continuously read from register,baga valoarea in instruction_word
 
 // compile with +define+FORCE_LOAD_ERROR to inject a functional bug for verification to catch
 `ifdef FORCE_LOAD_ERROR

@@ -9,7 +9,7 @@
 # 
 # Top level modules:
 # 	top
-# vsim +notimingchecks +nowarnTSCALE +TESTNAME=222 -coverage -notogglevlogints -sva -quiet -novopt top 
+# vsim +notimingchecks +nowarnTSCALE +TESTNAME=24 -coverage -notogglevlogints -sva -quiet -novopt top 
 # Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.instr_register_pkg
 # Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.top
 # Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.tb_ifc

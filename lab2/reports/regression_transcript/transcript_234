@@ -1,0 +1,224 @@
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# -- Compiling interface tb_ifc
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +code=bcesft +nowarnTSCALE -coverage -sva -quiet -sv_seed 234 -novopt top 
+# Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.instr_register_pkg
+# Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.top
+# Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.tb_ifc
+# Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.instr_register_test
+# Refreshing C:\Users\otili\OneDrive\Desktop\FACULTATE\TSC\TSC\lab2\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(33): Clocking block output #parent#.laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output #parent#.laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(29): Clocking block output #parent#.laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(33): Clocking block output #parent#.laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output #parent#.laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(29): Clocking block output #parent#.laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(125): Clocking block output laborator3.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(126): Clocking block output laborator3.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(127): Clocking block output laborator3.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output laborator3.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(132): Clocking block output laborator3.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Error: (vish-4014) No objects found matching '/top/test/seed'.
+# Executing ONERROR command at macro ./wave.do line 14
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# First header
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   opcode = 2 (PASSB)
+#   operand_a = -5
+#   operand_b = 4
+# 
+#   time =                20004 ns 
+# 
+# Writing to register location 1: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 6
+# 
+#   time =                30004 ns 
+# 
+# Writing to register location 2: 
+#   opcode = 0 (ZERO)
+#   operand_a = -11
+#   operand_b = 11
+# 
+#   time =                40004 ns 
+# 
+# Writing to register location 3: 
+#   opcode = 3 (ADD)
+#   operand_a = 11
+#   operand_b = 2
+# 
+#   time =                50004 ns 
+# 
+# Writing to register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = 10
+#   operand_b = 7
+# 
+#   time =                60004 ns 
+# 
+# 
+# Reading back the same register locations written...
+# Read from register location 0: 
+#   opcode = 2 (PASSB)
+#   operand_a = -5
+#   operand_b = 4
+# 
+#   time   =                72004 ns
+# 
+#   result    = 4
+# 
+# Read from register location 1: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 6
+# 
+#   time   =                82004 ns
+# 
+#   result    = 36
+# 
+# Read from register location 2: 
+#   opcode = 0 (ZERO)
+#   operand_a = -11
+#   operand_b = 11
+# 
+#   time   =                92004 ns
+# 
+#   result    = 0
+# 
+# Read from register location 3: 
+#   opcode = 3 (ADD)
+#   operand_a = 11
+#   operand_b = 2
+# 
+#   time   =               102004 ns
+# 
+#   result    = 13
+# 
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = 10
+#   operand_b = 7
+# 
+#   time   =               112004 ns
+# 
+#   result    = 70
+# 
+# Read from register location 5: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+# 
+#   time   =               122004 ns
+# 
+#   result    = 0
+# 
+# Read from register location 0: 
+#   opcode = 2 (PASSB)
+#   operand_a = -5
+#   operand_b = 4
+# 
+#   time   =               132004 ns
+# 
+#   result    = 4
+# 
+# Read from register location 1: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 6
+# 
+#   time   =               142004 ns
+# 
+#   result    = 36
+# 
+# Read from register location 2: 
+#   opcode = 0 (ZERO)
+#   operand_a = -11
+#   operand_b = 11
+# 
+#   time   =               152004 ns
+# 
+#   result    = 0
+# 
+# Read from register location 3: 
+#   opcode = 3 (ADD)
+#   operand_a = 11
+#   operand_b = 2
+# 
+#   time   =               162004 ns
+# 
+#   result    = 13
+# 
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = 10
+#   operand_b = 7
+# 
+#   time   =               172004 ns
+# 
+#   result    = 70
+# 
+# Read from register location 5: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+# 
+#   time   =               182004 ns
+# 
+#   result    = 0
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(100)
+#    Time: 190004 ps  Iteration: 2  Instance: /top/test
+# 1
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 100
+# Simulation Breakpoint: 1
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 100
+# MACRO ./run.do PAUSED at line 51
